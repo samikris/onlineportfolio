@@ -104,6 +104,7 @@ hr:not([size]) {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
+  margin-left:0;
   font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 800;
   line-height: 1.2;
@@ -154,8 +155,11 @@ h6, .h6 {
 }
 
 p {
+  font-size: 1.1rem;
   margin-top: 0;
   margin-bottom: 1rem;
+  margin-left: 0px;
+
 }
 
 abbr[title],
@@ -175,7 +179,7 @@ address {
 
 ol,
 ul {
-  padding-left: 1rem;
+  padding-left: 0rem;
 }
 
 ol,
@@ -639,14 +643,14 @@ progress {
   margin-left: auto;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 900px) {
   .container-sm, .container {
-    max-width: 540px;
+    max-width: 100%;
   }
 }
 @media (min-width: 768px) {
   .container-md, .container-sm, .container {
-    max-width: 720px;
+    max-width: 2000px;
   }
 }
 @media (min-width: 992px) {
@@ -675,7 +679,7 @@ progress {
 }
 .row > * {
   flex-shrink: 0;
-  width: 100%;
+  width: 500%;
   max-width: 100%;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
@@ -2124,7 +2128,7 @@ progress {
   -webkit-overflow-scrolling: touch;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 1000px) {
   .table-responsive-sm {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -2192,7 +2196,7 @@ progress {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #fff;
+  background-color: #e27474;
   background-clip: padding-box;
   border: 1px solid #ced4da;
   -webkit-appearance: none;
@@ -2217,7 +2221,7 @@ progress {
   background-color: #fff;
   border-color: #80c2d0;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(0, 133, 161, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(0, 433, 161, 0.25);
 }
 .form-control::-webkit-date-and-time-value {
   height: 1.5em;
@@ -5355,8 +5359,8 @@ textarea.form-control-lg {
 
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: 500px;
-    margin: 1.75rem auto;
+    max-width: 1000px;
+    margin: 0 auto;
   }
 
   .modal-dialog-scrollable {
@@ -5383,7 +5387,8 @@ textarea.form-control-lg {
   }
 }
 .modal-fullscreen {
-  width: 100vw;
+  width: 10
+    0vw;
   max-width: none;
   height: 100%;
   margin: 0;
@@ -5395,7 +5400,7 @@ textarea.form-control-lg {
 .modal-fullscreen .modal-body {
   overflow-y: auto;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 0px) {
   .modal-fullscreen-sm-down {
     width: 100vw;
     max-width: none;
@@ -5410,9 +5415,9 @@ textarea.form-control-lg {
     overflow-y: auto;
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 1000px) {
   .modal-fullscreen-md-down {
-    width: 100vw;
+    width: 300vw;
     max-width: none;
     height: 100%;
     margin: 0;
@@ -6656,7 +6661,7 @@ textarea.form-control-lg {
 }
 
 .w-50 {
-  width: 50% !important;
+  width: 100% !important;
 }
 
 .w-75 {
@@ -7166,13 +7171,13 @@ textarea.form-control-lg {
 }
 
 .px-4 {
-  padding-right: 1.5rem !important;
-  padding-left: 1.5rem !important;
+  padding-right: .5rem !important;
+  padding-left: .5rem !important;
 }
 
 .px-5 {
-  padding-right: 3rem !important;
-  padding-left: 3rem !important;
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
 }
 
 .py-0 {
@@ -8259,7 +8264,7 @@ textarea.form-control-lg {
   }
 
   .pe-sm-2 {
-    padding-right: 0.5rem !important;
+    padding-right: 0rem !important;
   }
 
   .pe-sm-3 {
